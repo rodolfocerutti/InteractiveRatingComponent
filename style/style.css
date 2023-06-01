@@ -7,6 +7,7 @@
     --DarkBlue: hsl(213, 19%, 18%);
     --DarkBlueDark: hsl(217, 17%, 15%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
     --font: 'Overpass', sans-serif;
 }
 
@@ -22,14 +23,7 @@ body{
     min-height: 100vh;
 }
 
-.attribution{ 
-font-size: 11px; 
-text-align: center; 
-}
-
-.attribution a { 
-color: hsl(228, 45%, 44%); 
-}
+/*-----------------Rating card*/
 
 .star{
     background-color: var(--DarkBlueDark);
@@ -39,7 +33,6 @@ color: hsl(228, 45%, 44%);
 }
 
 .container-principal{
-    background-color: var(--DarkBlue);
     max-width: 40vh;
     display: flex;
     flex-direction: column;
@@ -52,6 +45,8 @@ color: hsl(228, 45%, 44%);
     gap: 1rem;
     padding: 1.5rem;
     line-height: 1.5rem;
+    background-color: var(--DarkBlue);
+    border-radius: 30px;
 }
 
 .button__list{
@@ -66,9 +61,80 @@ color: hsl(228, 45%, 44%);
     border: none;
     width: 3rem;
     height: 3rem;
+    font-weight: 700;
+    color: var(--MediumGrey);
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: var(--Orange);
+}
+
+.btn:focus{
+    background-color: var(--Orange);
 }
 
 .btn-submit{
-    
+    background-color: var(--Orange);
+    border: none;
+    padding: 1rem 0;
+    border-radius: 50px;
+    margin-top: .5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: 0.3s;
 }
+
+.btn-submit:hover{
+    background-color: var(--DarkBlueDark);
+}
+
+.container-titulo{
+    font-size: 24px;
+    color: var(--white);
+}
+
+.container-text{
+    color: var(--MediumGrey);
+    font-weight: 400;
+}
+
+/*-----------------Card thankyou*/
+.container-second{
+    max-width: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+.container-second{
+    background-color: var(--DarkBlue);
+    border-radius: 20px;
+}
+
+.container-thks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.imagem-celular{
+    width: 150px;
+}
+
+.text-thks{
+    background-color: var(--DarkBlueDark);
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    margin: .5rem;
+    color: var(--Orange)
+}
+
 
