@@ -134,6 +134,14 @@ body{
     padding: .5rem 1rem;
     border-radius: 30px;
     margin: .5rem;
-    color: var(--Orange)
+    color: var(--Orange);
 }
 
+.attribution{
+    padding-top: 1rem;
+    color: var(--white)
+}
+
+.attribution a{
+    color: var(--Orange);
+}
