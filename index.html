@@ -28,11 +28,11 @@
 
       <div>
         <ul class="button__list">
-          <li><button class="btn">1</button></li>
-          <li><button class="btn">2</button></li>
-          <li><button class="btn">3</button></li>
-          <li><button class="btn">4</button></li>
-          <li><button class="btn">5</button></li>
+          <li><button class="btn" data-rating="1">1</button></li>
+          <li><button class="btn" data-rating="2">2</button></li>
+          <li><button class="btn" data-rating="3">3</button></li>
+          <li><button class="btn" data-rating="4">4</button></li>
+          <li><button class="btn" data-rating="5">5</button></li>
         </ul>
       </div>
 
@@ -47,12 +47,11 @@
       <div class="container-thks">
         <img class="imagem-celular" src="./images/illustration-thank-you.svg" alt="imagem com celular e agradecimentos">
     
-        <p class="text-thks">You selected <!-- Add rating here --> out of 5</p>
+        <p class="text-thks">You selected <span id="rating-value-display"></span> out of 5</p>
     
         <h2 class="container-titulo">Thank you!</h2>
     
-        <p class="container-text">We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!</p>
+        <p class="container-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
       </div>
       <button class="btn-submit" id="rate-again">Rating Again</button>
     
@@ -62,6 +61,11 @@
 <script src="./main.js"></script>
 
   <!-- Thank you state end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rodolfo Cerutti</a>.
+  </div>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
-## Project under construction ⚠️
+## Project Complete ✔️
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
@@ -22,6 +22,8 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
+
+-For this project, chatgpt was used a lot. With him I was able to find the solution to the challenge.
 
 ## Deploying your project
 

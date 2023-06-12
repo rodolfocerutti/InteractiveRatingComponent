@@ -1,15 +1,30 @@
 const mainContainer = document.querySelector(".container-principal");
-const secondContainer = document.querySelector(".container-secundario")
-const submitButton = document.querySelector(".submit-rating")
-const rateAgain = document.querySelector(".rate-again")
+const secondContainer = document.querySelector(".container-second");
+const submitButton = document.getElementById("submit-rating");
+const rateAgain = document.getElementById("rate-again");
+const ratingValueDisplay = document.getElementById("rating-value-display");
 
-submitButton = addEventListener("click", () => {
-    mainContainer.style.display = "none"
-    secondContainer.classList.remove("hidden")
+let selectedRating = 0;
 
-})
+// Evento de clique nos botões de classificação
+document.querySelectorAll(".btn").forEach(button => {
+  button.addEventListener("click", () => {
+    selectedRating = parseInt(button.getAttribute("data-rating"));
+    ratingValueDisplay.textContent = selectedRating.toString();
+    secondContainer.classList.remove("hidden");
+    mainContainer.classList.add("hidden");
+  });
+});
 
+// Evento de clique no botão "Rate Again"
 rateAgain.addEventListener("click", () => {
-    mainContainer.style.display = "block"
-    secondContainer.classList.add("hidden");
-})
+  mainContainer.classList.remove("hidden");
+  secondContainer.classList.add("hidden");
+  ratingValueDisplay.textContent = "";
+  selectedRating = 0;
+});
+
+// Evento de clique no botão "Submit"
+submitButton.addEventListener("click", () => {
+  secondContainer.classList.add("hidden");
+});
